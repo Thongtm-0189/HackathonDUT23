@@ -77,3 +77,8 @@
     max-width: 1170px;
   }
 }
+@media (max-width: 508px) {
+  .contact_section .form_container button {
+    padding: 10px 10px;
+  }
+}

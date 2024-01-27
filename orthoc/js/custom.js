@@ -44,3 +44,20 @@ function myMap() {
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
+
+for(var el of document.getElementsByClassName("submit")){
+    el.addEventListener("click", function() {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "block"; /* Show the modal */
+      });
+}
+
+// document.getElementsByClassName("submit").addEventListener("click", function() {
+//     var modal = document.getElementById("myModal");
+//     modal.style.display = "block"; /* Show the modal */
+//   });
+  
+  document.getElementById("closeButton").addEventListener("click", function() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none"; /* Hide the modal */
+  });

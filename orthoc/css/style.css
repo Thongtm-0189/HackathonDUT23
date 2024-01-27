@@ -10,7 +10,7 @@ body {
 }
 
 .layout_padding {
-  padding: 90px 0;
+  padding: 30px 0;
 }
 
 .layout_padding2 {
@@ -134,7 +134,7 @@ a:focus {
 
 .sub_page .hero_area {
   min-height: auto;
-  background-color: #178066;
+  background-color: #65baad;
 }
 
 .sub_page .hero_area .hero_bg_box {
@@ -489,7 +489,7 @@ a:focus {
 }
 
 .doctor_section {
-  background: #178066;
+  background: #65baad;
 }
 
 .doctor_section .heading_container {
@@ -596,15 +596,17 @@ a:focus {
   text-transform: uppercase;
 }
 
-.contact_section .form_container input {
+.contact_section .form_container input, .contact_section .form_container textarea {
   width: 100%;
   border: none;
-  height: 50px;
   margin-bottom: 15px;
   padding-left: 20px;
   outline: none;
-  color: #101010;
+  color: #000000;
   background: #eeeeee;
+}
+.contact_section .form_container input{
+  height: 50px;
 }
 
 .contact_section .form_container input::-webkit-input-placeholder {
@@ -619,7 +621,7 @@ a:focus {
   color: #000000;
 }
 
-.contact_section .form_container input::placeholder {
+.contact_section .form_container input::placeholder, .contact_section .form_container textarea::placeholder{
   color: #000000;
 }
 
@@ -628,22 +630,25 @@ a:focus {
 }
 
 .contact_section .form_container button {
-  width: 100%;
+  /* width: 100%; */
   border: none;
+  font-weight: bolder;
+  font-size: larger;
   text-transform: uppercase;
   display: inline-block;
   padding: 12px 55px;
-  background-color: #1fab89;
+  background-color: #62d2a2;
   color: #ffffff;
   border-radius: 5px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  border: 1px solid #1fab89;
+  border: 1px solid #62d2a2;
+  margin-top: 30px;
 }
 
 .contact_section .form_container button:hover {
   background-color: transparent;
-  color: #1fab89;
+  color: #ffffff;
 }
 
 .contact_section .map_container {
@@ -759,7 +764,7 @@ a:focus {
 }
 
 .footer_section {
-  background: #178066;
+  background: #65baad;
   color: #ffffff;
   padding: 60px 0 15px 0;
   position: relative;
@@ -909,6 +914,117 @@ a:focus {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
+/* Modal Header */
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+/* Modal Footer */
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: auto; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+.modal {
+  display: none; /* Hide the modal initially */
+  position: fixed; /* Stay in the center of the screen */
+  z-index: 1; /* Sit on top of other content */
+  height: 50%;
+  /* margin-top: 100px; */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%; /* Adjust as needed */
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+.form_container .contact-form{
+  margin-top: 100px;
+}
+.modal h2{
+  text-align: center;
+}
+.modal h1{
+  font-weight: bolder;
+  font-size: xx-large;
+  text-align: center;
+  color: red;
+}
+.modal h4{
+  text-align: center;
+}
+
+.form_container.contact-form .submitButton{
+  margin: 0 auto;
+  width: 50%;
+}
+label{
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: medium;
+}
+.heading_container{
+  align-items: center;
+}
+.heading_container h1{
+  font-weight: bold;
+}
+.modal #closeButton{
+  background-color: #62d2a2;
+  color: #ffffff;
+}
+.modal .BtnClose{
+  margin: 0 auto;
+  display: flex;
+  
+}
+
+section{padding:5% 0}
+.alizarin{background:#e74c3c}
+.amethyst{background:#9b59b6}
+.emerald{background:#62d2a2}
+.midnight-blue{background:#65baad}
+.peter-river{background:#3498db}
+.dl{background:#f0f0f0;padding:30px 0;border-radius:20px;position:relative}
+.dl:before{content:" ";height:20px;width:20px;background:#ddd;border-radius:20px;position:absolute;left:50%;top:20px;margin-left:-10px}
+.dl .brand{text-transform:uppercase;letter-spacing:3px;padding:10px 15px;margin-top:10px;text-align:center;min-height:100px}
+.dl .discount{min-height:50px;position:relative;font-size:80px;line-height:80px;text-align:center;font-weight:700;padding:20px 15px 0;color:#f1c40f}
+.dl .discount:after{content:" ";border-right:20px solid transparent;border-left:20px solid transparent;position:absolute;bottom:-20px;left:20%}
+.dl .discount.alizarin:after{border-top:20px solid #e74c3c}
+.dl .discount.peter-river:after{border-top:20px solid #3498db}
+.dl .discount.emerald:after{border-top:20px solid #62d2a2}
+.dl .discount.amethyst:after{border-top:20px solid #9b59b6}
+.dl .discount .type{font-size:20px;letter-spacing:1px;text-transform:uppercase;margin-top:-30px;color: #ffffff;}
+.dl .descr{color:#999;margin-top:10px;padding:20px 15px; text-align: center;}
+.dl .ends{padding:0 15px;color:#f1c40f;margin-bottom:10px}
+.dl .coupon{min-height:50px;text-align:center;text-transform:uppercase;font-weight:700;font-size:18px;padding:20px 15px}
+.dl .coupon a.open-code{color:#ffffff}
+.dl .coupon .code{letter-spacing:1px;border-radius:4px;margin-top:10px;padding:10px 15px;color:#f1c40f;background:#65baad}
+
 
 /* css login */
     
